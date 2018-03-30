@@ -25,4 +25,4 @@ app.post('/api/coderunner', cors(), (req, res, next) => {
   })
 })
 
-app.listen(8080, () => console.log('Witch is flying on port 8080!'))
+app.listen(process.env.PORT || 8080, () => console.log('Witch is flying on port 8080!'))
